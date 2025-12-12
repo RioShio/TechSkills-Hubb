@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TechSkills Hub - Course Catalog</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f9f506",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#23220f",
+                        "text-main": "#1c1c0d",
+                        "text-muted": "#5c5c4f",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "1.5rem", "xl": "2rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Spline Sans", sans-serif;
+        }
+        /* Custom scrollbar for better aesthetic */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d4d4d0; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b0b0ac; 
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-main antialiased min-h-screen flex flex-col">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 w-full bg-[#fcfcf8]/90 backdrop-blur-md border-b border-[#f4f4e6] dark:bg-[#23220f]/90 dark:border-[#3a391a]">
+<div class="px-4 md:px-10 py-3 max-w-[1440px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-3 text-text-main dark:text-white">
+<div class="size-8 flex items-center justify-center text-primary bg-black rounded-lg">
+<span class="material-symbols-outlined text-[20px]">school</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-tight">TechSkills Hub</h2>
+</div>
+<nav class="hidden lg:flex items-center gap-8">
+<a  class="text-sm font-medium hover:text-primary transition-colors dark:text-gray-200" href="./index.html">Home</a>
+<a  class="text-sm font-medium hover:text-primary transition-colors dark:text-gray-200" href="./Menu_Course.html">Courses</a>
+<a  class="text-sm font-medium hover:text-primary transition-colors dark:text-gray-200" href="./About.html">About</a>
+<a style="margin-right: 39vh;" class="text-sm font-medium hover:text-primary transition-colors dark:text-gray-200" href="#">Career Service</a>
+<button class="flex min-w-[84px] items-center justify-center overflow-hidden rounded-full h-10 px-5 bg-primary text-[#1c1c0d] text-sm font-bold shadow-sm hover:shadow-md transition-all hover:bg-[#fffc33]">
+<span>Apply Now</span>
+</button>
+</nav>
+<button class="lg:hidden text-text-main dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<div class="relative w-full bg-[#fcfcf8] dark:bg-[#23220f]">
+<div class="px-4 py-8 md:px-10 md:py-12 max-w-[1440px] mx-auto">
+<div class="flex flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl md:rounded-[2.5rem] overflow-hidden relative min-h-[400px] items-center justify-center p-6 text-center shadow-lg" data-alt="People collaborating on laptops in a modern office environment" style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3FuRGlKqaaUqQJWDsvx3Lr2H85LNpgacu5Jb6fJkrkbFEFKO1TAHFLh6ymE4FFMpcx3L1wrbqHRfUem-g3pc2t3q-gpqWa_3ux3u5JdjqbR6F6zXwm7RcItGml6EdNv6PEtCCYQ-ifkjDx4-_ZYERkJSg0wRT5W_r9BQOPaRhBOIld9oVYbPZxw1X959nTLfKrvjPYZXFHhiKbHIvc0RGRjprW73TBK9q4i1PZ1hyMlE4iKsIkR3pW8XkoHr9BXKrrHMaTTFQ0Fo");'>
+<div class="relative z-10 flex flex-col gap-3 max-w-2xl mx-auto">
+<h1 class="text-white text-4xl md:text-6xl font-black leading-tight tracking-[-0.033em]">
+                        Future-Proof Your Career
+                    </h1>
+<p class="text-gray-200 text-base md:text-lg font-medium leading-relaxed max-w-lg mx-auto">
+                        Kuasai skill teknologi yang paling dicari dengan pelatihan praktik langsung, bimbingan ahli, dan sertifikasi yang diakui industri.
+                    </p>
+</div>
+<div class="relative z-10 w-full max-w-[560px] mt-4">
+<div class="flex w-full items-center rounded-full h-14 bg-white p-1 pl-5 shadow-xl">
+<span class="material-symbols-outlined text-gray-400">search</span>
+<input class="flex-1 bg-transparent border-none focus:ring-0 text-text-main placeholder:text-gray-400 text-sm md:text-base px-3" placeholder="What skill do you want to learn? (e.g. Python, UX Design)"/>
+<button class="h-12 px-6 rounded-full bg-primary text-[#1c1c0d] text-sm font-bold hover:bg-[#e6e205] transition-colors whitespace-nowrap">
+                            Search
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content Area -->
+<main class="flex-grow w-full px-4 md:px-10 py-8 max-w-[1440px] mx-auto">
+<div class="flex flex-col lg:flex-row gap-8">
+<!-- Sidebar Filters -->
+<aside class="w-full lg:w-[280px] flex-shrink-0 space-y-6">
+<div class="flex items-center justify-between lg:hidden mb-4">
+<h3 class="font-bold text-xl dark:text-white">Filters</h3>
+<button class="text-sm font-medium text-text-muted underline">Clear All</button>
+</div>
+<div class="flex flex-col gap-4">
+<!-- Filter: Skill Level -->
+<details class="group open:bg-white dark:open:bg-[#2c2c16] rounded-xl border border-[#e9e8ce] dark:border-[#3a391a] overflow-hidden" open="">
+<summary class="flex cursor-pointer items-center justify-between p-4 bg-[#fcfcf8] dark:bg-[#23220f] group-open:border-b dark:group-open:border-[#3a391a] hover:bg-gray-50 dark:hover:bg-[#2a2912] transition-colors">
+<span class="text-sm font-bold text-text-main dark:text-white uppercase tracking-wider">Skill Level</span>
+<span class="material-symbols-outlined text-text-main dark:text-white transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-4 flex flex-col gap-3 bg-white dark:bg-[#2c2c16]">
+<label class="flex items-center gap-3 cursor-pointer">
+<input class="size-5 rounded border-gray-300 text-text-main focus:ring-primary" type="checkbox"/>
+<span class="text-sm text-text-muted dark:text-gray-300">Beginner</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer">
+<input checked="" class="size-5 rounded border-gray-300 text-text-main focus:ring-primary" type="checkbox"/>
+<span class="text-sm text-text-muted dark:text-gray-300">Intermediate</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer">
+<input class="size-5 rounded border-gray-300 text-text-main focus:ring-primary" type="checkbox"/>
+<span class="text-sm text-text-muted dark:text-gray-300">Advanced</span>
+</label>
+</div>
+</details>
+<!-- Filter: Category -->
+<details class="group open:bg-white dark:open:bg-[#2c2c16] rounded-xl border border-[#e9e8ce] dark:border-[#3a391a] overflow-hidden" open="">
+<summary class="flex cursor-pointer items-center justify-between p-4 bg-[#fcfcf8] dark:bg-[#23220f] group-open:border-b dark:group-open:border-[#3a391a] hover:bg-gray-50 dark:hover:bg-[#2a2912] transition-colors">
+<span class="text-sm font-bold text-text-main dark:text-white uppercase tracking-wider">Category</span>
+<span class="material-symbols-outlined text-text-main dark:text-white transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-4 flex flex-col gap-3 bg-white dark:bg-[#2c2c16]">
+<label class="flex items-center gap-3 cursor-pointer">
+<input checked="" class="size-5 rounded border-gray-300 text-text-main focus:ring-primary" type="checkbox"/>
+<span class="text-sm text-text-muted dark:text-gray-300">Programming &amp; Dev</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer">
+<input class="size-5 rounded border-gray-300 text-text-main focus:ring-primary" type="checkbox"/>
+<span class="text-sm text-text-muted dark:text-gray-300">Data Science</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer">
+<input class="size-5 rounded border-gray-300 text-text-main focus:ring-primary" type="checkbox"/>
+<span class="text-sm text-text-muted dark:text-gray-300">Cybersecurity</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer">
+<input class="size-5 rounded border-gray-300 text-text-main focus:ring-primary" type="checkbox"/>
+<span class="text-sm text-text-muted dark:text-gray-300">IT Support</span>
+</label>
+</div>
+</details>
+<!-- Filter: Duration -->
+<details class="group open:bg-white dark:open:bg-[#2c2c16] rounded-xl border border-[#e9e8ce] dark:border-[#3a391a] overflow-hidden">
+<summary class="flex cursor-pointer items-center justify-between p-4 bg-[#fcfcf8] dark:bg-[#23220f] group-open:border-b dark:group-open:border-[#3a391a] hover:bg-gray-50 dark:hover:bg-[#2a2912] transition-colors">
+<span class="text-sm font-bold text-text-main dark:text-white uppercase tracking-wider">Duration</span>
+<span class="material-symbols-outlined text-text-main dark:text-white transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-4 flex flex-col gap-3 bg-white dark:bg-[#2c2c16]">
+<label class="flex items-center gap-3 cursor-pointer">
+<input class="size-5 rounded border-gray-300 text-text-main focus:ring-primary" type="checkbox"/>
+<span class="text-sm text-text-muted dark:text-gray-300">Short (&lt; 4 weeks)</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer">
+<input class="size-5 rounded border-gray-300 text-text-main focus:ring-primary" type="checkbox"/>
+<span class="text-sm text-text-muted dark:text-gray-300">Bootcamp (12+ weeks)</span>
+</label>
+</div>
+</details>
+</div>
+</aside>
+<!-- Results Section -->
+<div class="flex-1 flex flex-col">
+<div class="flex flex-col md:flex-row md:items-center justify-between mb-6 gap-4">
+<h2 class="text-[#1c1c0d] dark:text-white text-2xl md:text-3xl font-bold leading-tight">Available Courses <span class="text-base font-normal text-text-muted dark:text-gray-400 ml-2">(14 found)</span></h2>
+<div class="flex flex-wrap gap-2">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white border border-[#e9e8ce] pl-3 pr-2 dark:bg-[#2c2c16] dark:border-[#3a391a]">
+<p class="text-[#1c1c0d] dark:text-white text-xs font-medium">Programming</p>
+<button class="material-symbols-outlined text-sm hover:text-red-500 transition-colors">close</button>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white border border-[#e9e8ce] pl-3 pr-2 dark:bg-[#2c2c16] dark:border-[#3a391a]">
+<p class="text-[#1c1c0d] dark:text-white text-xs font-medium">Intermediate</p>
+<button class="material-symbols-outlined text-sm hover:text-red-500 transition-colors">close</button>
+</div>
+</div>
+</div>
+<!-- Course Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="group flex flex-col bg-white dark:bg-[#2c2c16] rounded-xl border border-[#e9e8ce] dark:border-[#3a391a] overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full">
+<div class="h-48 w-full bg-cover bg-center relative" data-alt="Abstract blue coding interface visualization" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCm_UQ0TvdKj8vuxwLHWJ4LSa86ScZ9M2UmGukMEhYFuavejlgS4HLJ9OMfkT326uGacctE-Dp87Q_n1BctTj3LX5aeWBCnoE8yw6NpzEJUa4dSgA-BP95LwqYVtywHqeqoJ6JUDub95hL4DrZN7OJiziW3WXf-BqBezpEHfsHgS-AlRUZRzuTmc2BTv4aComtpnQTFhBT-ZKzpyw2OD8hV-qREKd2PfXw0PSQEeXb1W653buNFunTTsxADGyg98_hERW8hy2U8_Fg");'>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-white/90 backdrop-blur text-xs font-bold px-3 py-1 rounded-full text-blue-800 shadow-sm">Programming</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex justify-between items-center mb-2">
+<span class="text-xs font-bold text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/30 px-2 py-0.5 rounded uppercase tracking-wider">Beginner</span>
+<div class="flex items-center text-amber-500">
+<span class="material-symbols-outlined text-[16px] mr-1">star</span>
+<span class="text-xs font-bold text-text-main dark:text-white">4.9</span>
+</div>
+</div>
+<h3 class="font-bold text-lg text-text-main dark:text-white mb-3 line-clamp-2">Full Stack Web Development Bootcamp</h3>
+<ul class="flex flex-col gap-1.5 mb-6 flex-1">
+<li class="flex items-start text-sm text-text-muted dark:text-gray-300">
+<span class="material-symbols-outlined text-[16px] text-primary mr-2 mt-0.5">check_circle</span>
+                                    React.js &amp; Node.js Mastery
+                                </li>
+<li class="flex items-start text-sm text-text-muted dark:text-gray-300">
+<span class="material-symbols-outlined text-[16px] text-primary mr-2 mt-0.5">check_circle</span>
+                                    Building RESTful APIs
+                                </li>
+<li class="flex items-start text-sm text-text-muted dark:text-gray-300">
+<span class="material-symbols-outlined text-[16px] text-primary mr-2 mt-0.5">check_circle</span>
+                                    SQL &amp; NoSQL Databases
+                                </li>
+</ul>
+<div class="pt-4 mt-auto border-t border-[#f4f4e6] dark:border-[#3a391a]">
+<div class="flex items-center justify-between text-xs font-medium text-text-muted dark:text-gray-400 mb-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>12 Weeks</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+<span>Starts Oct 24</span>
+</div>
+</div>
+<button class="w-full flex items-center justify-center rounded-full bg-primary h-10 px-4 text-[#1c1c0d] text-sm font-bold hover:bg-[#e6e205] transition-colors">
+                                    View Course Details
+                                </button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group flex flex-col bg-white dark:bg-[#2c2c16] rounded-xl border border-[#e9e8ce] dark:border-[#3a391a] overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full">
+<div class="h-48 w-full bg-cover bg-center relative" data-alt="Data visualization graphs on a dark screen" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCOPi_TFjY8c9fMi--llieINcTN_5IVF0gYkGjo1ByCtVMpVw7sv2PtN3Q4BwG_Qu_2DYCOkHuYXBszpJhHTkvsQ5PbIEBWvy1xkdAZTNX_TznFY5qJmth-L6b7t-sMt0WRPDvV3fiBOTyItXMH6mgHvp31d_weVdxBymoWHEsz282Z_nlDBuInOuLd82bhujqEg1Y-KTdUQJ9ZBSFiTmiW62MNuopP1_JzsKao8dZqJgx6ZqgVUE3O7JaGjZur13nYaXcEAWjHglg");'>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-white/90 backdrop-blur text-xs font-bold px-3 py-1 rounded-full text-indigo-800 shadow-sm">Data Science</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex justify-between items-center mb-2">
+<span class="text-xs font-bold text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-900/30 px-2 py-0.5 rounded uppercase tracking-wider">Advanced</span>
+<div class="flex items-center text-amber-500">
+<span class="material-symbols-outlined text-[16px] mr-1">star</span>
+<span class="text-xs font-bold text-text-main dark:text-white">4.8</span>
+</div>
+</div>
+<h3 class="font-bold text-lg text-text-main dark:text-white mb-3 line-clamp-2">Advanced Python for Data Analysis</h3>
+<ul class="flex flex-col gap-1.5 mb-6 flex-1">
+<li class="flex items-start text-sm text-text-muted dark:text-gray-300">
+<span class="material-symbols-outlined text-[16px] text-primary mr-2 mt-0.5">check_circle</span>
+                                    Pandas &amp; NumPy Deep Dive
+                                </li>
+<li class="flex items-start text-sm text-text-muted dark:text-gray-300">
+<span class="material-symbols-outlined text-[16px] text-primary mr-2 mt-0.5">check_circle</span>
+                                    Data Visualization with Seaborn
+                                </li>
+<li class="flex items-start text-sm text-text-muted dark:text-gray-300">
+<span class="material-symbols-outlined text-[16px] text-primary mr-2 mt-0.5">check_circle</span>
+                                    Machine Learning Basics
+                                </li>
+</ul>
+<div class="pt-4 mt-auto border-t border-[#f4f4e6] dark:border-[#3a391a]">
+<div class="flex items-center justify-between text-xs font-medium text-text-muted dark:text-gray-400 mb-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>8 Weeks</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+<span>Starts Nov 01</span>
+</div>
+</div>
+<button class="w-full flex items-center justify-center rounded-full bg-primary h-10 px-4 text-[#1c1c0d] text-sm font-bold hover:bg-[#e6e205] transition-colors">
+                                    View Course Details
+                                </button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group flex flex-col bg-white dark:bg-[#2c2c16] rounded-xl border border-[#e9e8ce] dark:border-[#3a391a] overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full">
+<div class="h-48 w-full bg-cover bg-center relative" data-alt="Cloud computing network concept illustration" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCl5OsmNm3EL4j4wnmKtsxfg-SBTvM8x7jZp_7XZ_taSmnFgyufkiDeuwqFsATTZvz5waAenB_2h97sVWfjrBfFhdK5g-nBHNEQxMR1biyFupCi8mLN7HIyO___2mQ9syHZd2a8eK3paJXEMdYVGVywO0eLV1fjNiRC2MeLUxZMN0CkTmvQVSXrlVq6aTpF-i_Pee-NPszBo5rPRVHGU0kXG3-sPWV9X0F5r6Aj2_5eIvv4LKFMklxGEtYjpigIF-aAaml7dFGGd4U");'>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-white/90 backdrop-blur text-xs font-bold px-3 py-1 rounded-full text-purple-800 shadow-sm">Cloud Computing</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex justify-between items-center mb-2">
+<span class="text-xs font-bold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 px-2 py-0.5 rounded uppercase tracking-wider">Intermediate</span>
+<div class="flex items-center text-amber-500">
+<span class="material-symbols-outlined text-[16px] mr-1">star</span>
+<span class="text-xs font-bold text-text-main dark:text-white">5.0</span>
+</div>
+</div>
+<h3 class="font-bold text-lg text-text-main dark:text-white mb-3 line-clamp-2">AWS Solutions Architect Associate</h3>
+<ul class="flex flex-col gap-1.5 mb-6 flex-1">
+<li class="flex items-start text-sm text-text-muted dark:text-gray-300">
+<span class="material-symbols-outlined text-[16px] text-primary mr-2 mt-0.5">check_circle</span>
+                                    IAM &amp; S3 Configuration
+                                </li>
+<li class="flex items-start text-sm text-text-muted dark:text-gray-300">
+<span class="material-symbols-outlined text-[16px] text-primary mr-2 mt-0.5">check_circle</span>
+                                    EC2 &amp; VPC Networking
+                                </li>
+<li class="flex items-start text-sm text-text-muted dark:text-gray-300">
+<span class="material-symbols-outlined text-[16px] text-primary mr-2 mt-0.5">check_circle</span>
+                                    Serverless Architecture
+                                </li>
+</ul>
+<div class="pt-4 mt-auto border-t border-[#f4f4e6] dark:border-[#3a391a]">
+<div class="flex items-center justify-between text-xs font-medium text-text-muted dark:text-gray-400 mb-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>10 Weeks</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+<span>Starts Nov 15</span>
+</div>
+</div>
+<button class="w-full flex items-center justify-center rounded-full bg-primary h-10 px-4 text-[#1c1c0d] text-sm font-bold hover:bg-[#e6e205] transition-colors">
+                                    View Course Details
+                                </button>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group flex flex-col bg-white dark:bg-[#2c2c16] rounded-xl border border-[#e9e8ce] dark:border-[#3a391a] overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full">
+<div class="h-48 w-full bg-cover bg-center relative" data-alt="Digital security lock icon on dark background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuANv5_poCKe6G2cyokFn5OOpgaCDkorl6aSWdh5mPtdbchrjWfcNrmgw6W_iat90DFw7949ZvWq1APwZKOBVplLTtBuuv2xTJbx7vdS9zBVgYgl9kB21UamWLcVWeR4TyxDoo97YCf_pd_811z80MefmBXqEIFXTZo_p7TzYSNcNSVRTVa7TEGIJJWaaKiWokNETHRukz7C2f6Gs0s--OOgARp82KHPHzrCGGdc6iNYif8daHua02tWciuwUv359l7aipHkoEd3RIE");'>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-white/90 backdrop-blur text-xs font-bold px-3 py-1 rounded-full text-red-800 shadow-sm">Cybersecurity</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex justify-between items-center mb-2">
+<span class="text-xs font-bold text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/30 px-2 py-0.5 rounded uppercase tracking-wider">Beginner</span>
+<div class="flex items-center text-amber-500">
+<span class="material-symbols-outlined text-[16px] mr-1">star</span>
+<span class="text-xs font-bold text-text-main dark:text-white">4.7</span>
+</div>
+</div>
+<h3 class="font-bold text-lg text-text-main dark:text-white mb-3 line-clamp-2">Introduction to Ethical Hacking</h3>
+<ul class="flex flex-col gap-1.5 mb-6 flex-1">
+<li class="flex items-start text-sm text-text-muted dark:text-gray-300">
+<span class="material-symbols-outlined text-[16px] text-primary mr-2 mt-0.5">check_circle</span>
+                                    Network Scanning Tools
+                                </li>
+<li class="flex items-start text-sm text-text-muted dark:text-gray-300">
+<span class="material-symbols-outlined text-[16px] text-primary mr-2 mt-0.5">check_circle</span>
+                                    Vulnerability Assessment
+                                </li>
+<li class="flex items-start text-sm text-text-muted dark:text-gray-300">
+<span class="material-symbols-outlined text-[16px] text-primary mr-2 mt-0.5">check_circle</span>
+                                    Penetration Testing Basics
+                                </li>
+</ul>
+<div class="pt-4 mt-auto border-t border-[#f4f4e6] dark:border-[#3a391a]">
+<div class="flex items-center justify-between text-xs font-medium text-text-muted dark:text-gray-400 mb-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>6 Weeks</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+<span>Starts Dec 01</span>
+</div>
+</div>
+<button class="w-full flex items-center justify-center rounded-full bg-primary h-10 px-4 text-[#1c1c0d] text-sm font-bold hover:bg-[#e6e205] transition-colors">
+                                    View Course Details
+                                </button>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="group flex flex-col bg-white dark:bg-[#2c2c16] rounded-xl border border-[#e9e8ce] dark:border-[#3a391a] overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full">
+<div class="h-48 w-full bg-cover bg-center relative" data-alt="UI UX design wireframes on a table" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuApd66xntPkIDPke1jRH4U_rwjcDr9XuqCyknCzTcbG6VQCrJpKzwZCzoAArCQX5oK5VAzO6QpBgBua0QBcahgQsGAraRWqIqVkMVNy4hgHpFWqqWiaEMByYfylHQNSsHf3zL634IFkFRMlnBW4cgcV86Toss_ngra9GT5fagQnvFDICoFqCb6B2pMYgo35hP7OcmiCxwD4r1JDtRGe3d7JN8WbLQyv7eO2OpWTQq9rDSmjk_CrDf6KAiyU1dQ45dn8drwPhcfQLxQ");'>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-white/90 backdrop-blur text-xs font-bold px-3 py-1 rounded-full text-pink-800 shadow-sm">Design</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex justify-between items-center mb-2">
+<span class="text-xs font-bold text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/30 px-2 py-0.5 rounded uppercase tracking-wider">Beginner</span>
+<div class="flex items-center text-amber-500">
+<span class="material-symbols-outlined text-[16px] mr-1">star</span>
+<span class="text-xs font-bold text-text-main dark:text-white">4.9</span>
+</div>
+</div>
+<h3 class="font-bold text-lg text-text-main dark:text-white mb-3 line-clamp-2">UI/UX Design Fundamentals</h3>
+<ul class="flex flex-col gap-1.5 mb-6 flex-1">
+<li class="flex items-start text-sm text-text-muted dark:text-gray-300">
+<span class="material-symbols-outlined text-[16px] text-primary mr-2 mt-0.5">check_circle</span>
+                                    Figma &amp; Prototyping
+                                </li>
+<li class="flex items-start text-sm text-text-muted dark:text-gray-300">
+<span class="material-symbols-outlined text-[16px] text-primary mr-2 mt-0.5">check_circle</span>
+                                    User Research Methods
+                                </li>
+<li class="flex items-start text-sm text-text-muted dark:text-gray-300">
+<span class="material-symbols-outlined text-[16px] text-primary mr-2 mt-0.5">check_circle</span>
+                                    Design Systems
+                                </li>
+</ul>
+<div class="pt-4 mt-auto border-t border-[#f4f4e6] dark:border-[#3a391a]">
+<div class="flex items-center justify-between text-xs font-medium text-text-muted dark:text-gray-400 mb-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>8 Weeks</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+<span>Starts Oct 30</span>
+</div>
+</div>
+<button class="w-full flex items-center justify-center rounded-full bg-primary h-10 px-4 text-[#1c1c0d] text-sm font-bold hover:bg-[#e6e205] transition-colors">
+                                    View Course Details
+                                </button>
+</div>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="group flex flex-col bg-white dark:bg-[#2c2c16] rounded-xl border border-[#e9e8ce] dark:border-[#3a391a] overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full">
+<div class="h-48 w-full bg-cover bg-center relative" data-alt="Closeup of computer screen with code" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA26IB4H34L4oYz17dG-QOtw6CumFss6j10Dhs7k39rugtDEWdJVHMiPl7f80GeWAry5ap1w8NJ8Eojotov9CXsfTMSXuHjvZrWqZu6YnPdrf5vRtEYIkNrfnqKFxK5SyAr9kWFjPPTgGihWT_UvILboTEn3JQF4vblEFyQarfQxyekWQJqwXJXkkQijdX0_c0_uDvny1GGdxb2i8L322IL2loKroKOow78WQdzmwF6nC7x9kFnYulovMma7lbOVVDQJz7lcs4zJ4U");'>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-white/90 backdrop-blur text-xs font-bold px-3 py-1 rounded-full text-blue-800 shadow-sm">Programming</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex justify-between items-center mb-2">
+<span class="text-xs font-bold text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-900/30 px-2 py-0.5 rounded uppercase tracking-wider">Advanced</span>
+<div class="flex items-center text-amber-500">
+<span class="material-symbols-outlined text-[16px] mr-1">star</span>
+<span class="text-xs font-bold text-text-main dark:text-white">4.8</span>
+</div>
+</div>
+<h3 class="font-bold text-lg text-text-main dark:text-white mb-3 line-clamp-2">DevOps Engineering Career Path</h3>
+<ul class="flex flex-col gap-1.5 mb-6 flex-1">
+<li class="flex items-start text-sm text-text-muted dark:text-gray-300">
+<span class="material-symbols-outlined text-[16px] text-primary mr-2 mt-0.5">check_circle</span>
+                                    Docker &amp; Kubernetes
+                                </li>
+<li class="flex items-start text-sm text-text-muted dark:text-gray-300">
+<span class="material-symbols-outlined text-[16px] text-primary mr-2 mt-0.5">check_circle</span>
+                                    CI/CD Pipelines
+                                </li>
+<li class="flex items-start text-sm text-text-muted dark:text-gray-300">
+<span class="material-symbols-outlined text-[16px] text-primary mr-2 mt-0.5">check_circle</span>
+                                    Infrastructure as Code
+                                </li>
+</ul>
+<div class="pt-4 mt-auto border-t border-[#f4f4e6] dark:border-[#3a391a]">
+<div class="flex items-center justify-between text-xs font-medium text-text-muted dark:text-gray-400 mb-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>16 Weeks</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+<span>Starts Jan 10</span>
+</div>
+</div>
+<button class="w-full flex items-center justify-center rounded-full bg-primary h-10 px-4 text-[#1c1c0d] text-sm font-bold hover:bg-[#e6e205] transition-colors">
+                                    View Course Details
+                                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Load More -->
+<div class="flex justify-center mt-12 mb-8">
+<button class="flex items-center gap-2 px-8 py-3 rounded-full border border-gray-300 dark:border-gray-600 hover:bg-white dark:hover:bg-[#2c2c16] text-text-main dark:text-white font-bold transition-all">
+<span>Load More Courses</span>
+<span class="material-symbols-outlined">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Simple -->
+<footer class="bg-white dark:bg-[#1a190b] border-t border-[#f4f4e6] dark:border-[#3a391a] py-8 mt-auto">
+<div class="px-4 md:px-10 max-w-[1440px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+<p class="text-sm text-text-muted dark:text-gray-400">© 2023 TechSkills Hub. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-sm text-text-muted hover:text-primary dark:text-gray-400 transition-colors" href="#">Privacy Policy</a>
+<a class="text-sm text-text-muted hover:text-primary dark:text-gray-400 transition-colors" href="#">Terms of Service</a>
+<a class="text-sm text-text-muted hover:text-primary dark:text-gray-400 transition-colors" href="#">Contact Support</a>
+</div>
+</div>
+</footer>
+</body></html>
