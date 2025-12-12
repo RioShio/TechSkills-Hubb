@@ -3,55 +3,62 @@
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>TechSkills Hub - Computer Training & Certification</title>
-<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<title>TechSkills Hub - Computer Training &amp; Certification</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<!-- Tailwind Config -->
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#f9f506",
-                        "background-light": "#f8f8f5",
-                        "background-dark": "#23220f",
-                        "text-main": "#1c1c0d",
-                        "text-muted": "#5c5c4d",
-                    },
-                    fontFamily: {
-                        "display": ["Spline Sans", "Noto Sans", "sans-serif"],
-                        "body": ["Noto Sans", "sans-serif"],
-                    },
-                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
-                },
-            },
-        }
-    </script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f9f506",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#23220f",
+                        "text-main": "#1c1c0d",
+                        "text-muted": "#5c5c4d",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "Noto Sans", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-text-main font-display antialiased overflow-x-hidden">
+<!-- Navbar -->
 <nav class="sticky top-0 z-50 w-full border-b border-[#e6e6dc] bg-background-light/80 backdrop-blur-md dark:bg-background-dark/80 dark:border-white/10">
 <div class="mx-auto max-w-[1280px] px-6 lg:px-8">
 <div class="flex h-20 items-center justify-between">
+<!-- Logo -->
 <div class="flex items-center gap-3">
 <div class="flex items-center justify-center size-10 rounded-full bg-primary text-text-main">
 <span class="material-symbols-outlined text-2xl">school</span>
 </div>
 <span class="text-xl font-bold tracking-tight text-text-main dark:text-white">TechSkills Hub</span>
 </div>
+<!-- Desktop Menu -->
 <div class="hidden md:flex items-center gap-8">
 <a class="text-sm font-medium text-text-main hover:text-primary transition-colors dark:text-white/90" href="#">Home</a>
 <a class="text-sm font-medium text-text-main hover:text-primary transition-colors dark:text-white/90" href="./Menu_Course.html">Courses</a>
 <a class="text-sm font-medium text-text-main hover:text-primary transition-colors dark:text-white/90" href="./About.html">About</a>
 <a class="text-sm font-medium text-text-main hover:text-primary transition-colors dark:text-white/90" href="#">Career Services</a>
 </div>
+<!-- CTA Button -->
 <div class="hidden md:flex">
 <button class="bg-primary text-text-main px-6 py-2.5 rounded-full text-sm font-bold hover:brightness-105 transition-all shadow-[0_4px_0_#d8d405] active:shadow-none active:translate-y-[2px]">
-                        Apply Now
-                    </button>
+                        Apply Now
+                    </button>
 </div>
+<!-- Mobile Menu Icon -->
 <div class="md:hidden">
 <button class="p-2 text-text-main dark:text-white">
 <span class="material-symbols-outlined">menu</span>
@@ -60,9 +67,11 @@
 </div>
 </div>
 </nav>
-<section class="relative pt-12 pb-16 lg:pt-24 lg:pb-32 overflow-hidden" data-aos="fade">
+<!-- Hero Section -->
+<section class="relative pt-12 pb-16 lg:pt-24 lg:pb-32 overflow-hidden">
 <div class="mx-auto max-w-[1280px] px-6 lg:px-8">
 <div class="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+<!-- Hero Content -->
 <div class="flex flex-col gap-6 max-w-2xl">
 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#e6e6dc] w-fit dark:bg-white/5 dark:border-white/10">
 <span class="relative flex h-2 w-2">
@@ -72,27 +81,27 @@
 <span class="text-xs font-semibold text-text-muted dark:text-white/70 uppercase tracking-wider">New Cohort Starting Soon</span>
 </div>
 <h1 class="text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight text-text-main dark:text-white">
- Praktik Langsung, <br/>
+                        Praktik Langsung, <br/>
 <span class="relative whitespace-nowrap z-10">
- Siap Kerja
-                            <svg class="absolute -bottom-2 left-0 w-full h-4 text-primary -z-10" preserveaspectratio="none" viewbox="0 0 100 10">
+                            Siap Kerja
+                            <svg class="absolute -bottom-2 left-0 w-full h-4 text-primary -z-10" preserveaspectratio="none" viewbox="0 0 100 10">
 <path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" stroke-width="8"></path>
 </svg>
 </span>
 <br/>
- computer training.
-                    </h1>
+                        computer training.
+                    </h1>
 <p class="text-lg text-text-muted dark:text-white/70 max-w-lg leading-relaxed">
- Gabung di akademi yang menjembatani jarak antara belajar dan menghasilkan uang. Kuasai keahlian digital yang kini paling dicari oleh perusahaan-perusahaan top!
-                    </p>
+                        Gabung di akademi yang menjembatani jarak antara belajar dan menghasilkan uang. Kuasai keahlian digital yang kini paling dicari oleh perusahaan-perusahaan top!
+                    </p>
 <div class="flex flex-col sm:flex-row gap-4 mt-4">
 <button class="bg-primary text-text-main px-8 py-4 rounded-full text-base font-bold hover:brightness-105 transition-all shadow-[0_6px_0_#d8d405] active:shadow-none active:translate-y-[3px] min-w-[180px] flex items-center justify-center gap-2">
- Explore Courses
-                            <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                            Explore Courses
+                            <span class="material-symbols-outlined text-lg">arrow_forward</span>
 </button>
 <button class="bg-transparent border-2 border-[#e6e6dc] text-text-main dark:text-white dark:border-white/20 px-8 py-4 rounded-full text-base font-bold hover:bg-[#e6e6dc]/30 transition-all min-w-[180px]">
- Join Courses
-                        </button>
+                            Join Courses
+                        </button>
 </div>
 <div class="flex items-center gap-4 mt-4 text-sm font-medium text-text-muted dark:text-white/60">
 <div class="flex -space-x-3">
@@ -104,9 +113,11 @@
 <p>Jadilah bagian dari lebih dari 2.000 alumni kami</p>
 </div>
 </div>
+<!-- Hero Image -->
 <div class="relative lg:h-[600px] w-full rounded-2xl overflow-hidden group shadow-2xl">
 <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
 <img alt="Students collaborating" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Group of diverse students working together on laptops in a modern classroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5pa0Ls6TJFU5GakKhPa-Xb3nitXfzPw6JDI6wmHqUz_lQKEuPZ8qTZJ09B9_MH9DXlV36pwf_Usik_HLNlE15PxM3C0LK3d8Z-vsjN_RGKmQJ6cGauMZIb4MVGEG-P7I1B4QOlj5P65_Lbf8XQOOOcYyWXtDrgx4Nl8m55JXCsCo-_Ok5sKnqdb9qxaoyDIZqVnPJrXfRogo5mEntslMbkRlR5loba6USxwM5E8J5Zf6L3yaM_Fmt6PQx95f_ZYjqIo4T_kAiYp4"/>
+<!-- Floating Badge -->
 <div class="absolute bottom-8 left-8 right-8 z-20">
 <div class="bg-white/90 backdrop-blur-sm p-6 rounded-xl border border-white/20 shadow-lg">
 <div class="flex items-center gap-4">
@@ -124,7 +135,8 @@
 </div>
 </div>
 </section>
-<section class="border-y border-[#e6e6dc] bg-white dark:bg-white/5 dark:border-white/10 py-12" data-aos="fade-up">
+<!-- Stats Banner -->
+<section class="border-y border-[#e6e6dc] bg-white dark:bg-white/5 dark:border-white/10 py-12">
 <div class="mx-auto max-w-[1280px] px-6 lg:px-8">
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-[#e6e6dc] dark:divide-white/10">
 <div class="flex flex-col items-center text-center p-4">
@@ -145,22 +157,24 @@
 </div>
 </div>
 </section>
-<section class="py-20 lg:py-28 bg-background-light dark:bg-background-dark" data-aos="fade-up">
+<!-- Popular Courses -->
+<section class="py-20 lg:py-28 bg-background-light dark:bg-background-dark">
 <div class="mx-auto max-w-[1280px] px-6 lg:px-8">
 <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
 <div>
 <h2 class="text-3xl md:text-4xl font-bold text-text-main dark:text-white mb-4">Most Popular Courses</h2>
 <p class="text-text-muted dark:text-white/70 max-w-xl">
- Materi belajar kita disusun berkat kontribusi dari tokoh-tokoh top di industri. Ayo, mulai petualanganmu dengan program-program yang paling diminati!
-                    </p>
+                        Materi belajar kita disusun berkat kontribusi dari tokoh-tokoh top di industri. Ayo, mulai petualanganmu dengan program-program yang paling diminati!
+                    </p>
 </div>
 <a class="text-text-main font-bold hover:text-primary transition-colors flex items-center gap-2 group dark:text-white" href="./Menu_Course.html">
- View all courses
-                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    View all courses
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </a>
 </div>
 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-<div class="group bg-white dark:bg-[#2c2b18] rounded-2xl overflow-hidden border border-[#e6e6dc] hover:border-primary dark:border-white/10 dark:hover:border-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col h-full" data-aos="fade-up">
+<!-- Course Card 1: Python -->
+<div class="group bg-white dark:bg-[#2c2b18] rounded-2xl overflow-hidden border border-[#e6e6dc] hover:border-primary dark:border-white/10 dark:hover:border-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col h-full">
 <div class="relative aspect-video overflow-hidden">
 <img alt="Python Code on Screen" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Close up of python code on a computer monitor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8YxLAgf3Xwc3v6Bf-9pSfgyKPee-lkCuZY0Rit3oTdSvQWic-CzaRqE97vpNTwxseKLEnkPT7wy0MZI4ouCQ36VVV57hl1t-klycJCphKyShjBs8-2GMr-xahr4z8mFF0NuHsH0txQiSS_H-c4B87OuolsJIgbU0fS0Rr97k6yPtRybBbEC7SWofuJMkbo12sdpCWVIgYKQqxsS1_V2FzODa7mWaxkx7EJmsq_1qTG1Huf29cGEH33DhSltRWOxOspy5OKAjN_Mo"/>
 <div class="absolute top-4 left-4 bg-primary text-text-main text-xs font-bold px-3 py-1 rounded-full">Bestseller</div>
@@ -185,7 +199,8 @@
 </div>
 </div>
 </div>
-<div class="group bg-white dark:bg-[#2c2b18] rounded-2xl overflow-hidden border border-[#e6e6dc] hover:border-primary dark:border-white/10 dark:hover:border-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
+<!-- Course Card 2: Cybersecurity -->
+<div class="group bg-white dark:bg-[#2c2b18] rounded-2xl overflow-hidden border border-[#e6e6dc] hover:border-primary dark:border-white/10 dark:hover:border-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col h-full">
 <div class="relative aspect-video overflow-hidden">
 <img alt="Cybersecurity Matrix" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Abstract visualization of digital security network" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6YuDslTj_KlswU1AJQCHvCZXjnu7-ywqAK1OmjQTb_0My-SDcMh5UKLeRq6Zr55V6R2jCKGh89XyeQE8JFG_rWg1-c9qol-sopCDzhnbNTBZHfWGSsgeZk4ReC9Gq8lI0GZIVVXrn6KP6ZjzFqFSJX3mvaEOvHM42lTbLhRkpcchsRFvagjpITymGMvH7XoxT36-_Ugp5wKjAWHb2dJSv-Xjy0QlVcV54qQEZ6S_1dIxQfx2NmuQOpvoWcmSfxcTnT0bL9mpslyM"/>
 <div class="absolute top-4 left-4 bg-white text-text-main text-xs font-bold px-3 py-1 rounded-full border border-gray-100">Hot</div>
@@ -210,7 +225,8 @@
 </div>
 </div>
 </div>
-<div class="group bg-white dark:bg-[#2c2b18] rounded-2xl overflow-hidden border border-[#e6e6dc] hover:border-primary dark:border-white/10 dark:hover:border-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col h-full" data-aos="fade-up" data-aos-delay="200">
+<!-- Course Card 3: Graphic Design -->
+<div class="group bg-white dark:bg-[#2c2b18] rounded-2xl overflow-hidden border border-[#e6e6dc] hover:border-primary dark:border-white/10 dark:hover:border-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col h-full">
 <div class="relative aspect-video overflow-hidden">
 <img alt="Graphic Design Workspace" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Creative workspace with color palettes and design tools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoN8ni2isvM3GzvOmxdxUOzzN1ttnE6uEjP3PkzJgfXrwoQxQA7zXQuzVl8JB0QwIO3rzT8OomOqUyJg_hqAbzaLEVHsqsrnEvz5M8DSE6mX97KmlWHdgnmXmgYQh6ZeM4Dg6Dbul_2tAeUcY3jywcGdxhd2u7bzMZf4LCrdvassDp0h1wNLqJOvW4vnqj2Mx7Gy20mbwMJRSZPpi0gUACoeUYbkC8Il9U32BUkaU1zeMDeOfL9xRhvTGzMEbmKjrKwFFjTluLK88"/>
 </div>
@@ -237,17 +253,19 @@
 </div>
 </div>
 </section>
-<section class="py-20 lg:py-28 bg-white dark:bg-white/5 overflow-hidden" data-aos="fade">
+<!-- Success Stories / Testimonials -->
+<section class="py-20 lg:py-28 bg-white dark:bg-white/5 overflow-hidden">
 <div class="mx-auto max-w-[1280px] px-6 lg:px-8">
 <div class="text-center mb-16">
 <span class="text-primary font-bold tracking-wider uppercase text-sm mb-2 block">Success Stories</span>
 <h2 class="text-3xl md:text-5xl font-black text-text-main dark:text-white mb-4">From Learning to Earning</h2>
 <p class="text-text-muted dark:text-white/70 max-w-2xl mx-auto">
- Lihat sendiri bagaimana TechSkills Hub telah mengubah karier dan hidup banyak orang. Kisah nyata, hasil nyata.
-                </p>
+                    Lihat sendiri bagaimana TechSkills Hub telah mengubah karier dan hidup banyak orang. Kisah nyata, hasil nyata.
+                </p>
 </div>
 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-<div class="bg-background-light dark:bg-background-dark p-8 rounded-2xl relative" data-aos="zoom-in-up">
+<!-- Testimonial 1 -->
+<div class="bg-background-light dark:bg-background-dark p-8 rounded-2xl relative">
 <span class="material-symbols-outlined absolute top-8 right-8 text-6xl text-primary/10 select-none">format_quote</span>
 <div class="flex items-center gap-4 mb-6 relative z-10">
 <img alt="Sarah J." class="w-14 h-14 rounded-full object-cover border-2 border-primary" data-alt="Headshot of a smiling woman" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHpljDXXrQmby5TyrCwsNgzT2TKchGO7e9W-tSPUPC7BHC8sgBfcPgv75iGfq73lQFzsCwNeeu14otsW3OSFIVf4G6ro_7uO2XFaZ3gw-LnvcbQgxijaqrWVqprgsT3NmnS7SvJs46BIdIFM3ALii6GyIK3mCAkOuPrLluDzWTb5E3w3HYpL--CSjf4kno3xNqRzVuZaigLXDYFH3I4kMy8fI9nYJVS1cNdnK9bgCqgdDVFfDnUxx71lWGk6ttcUUwTHWYe7n-pJ0"/>
@@ -257,124 +275,11 @@
 </div>
 </div>
 <p class="text-text-main dark:text-white/90 italic relative z-10">
- "Aku berhasil pindah jalur karier cuma dalam 3 bulan, semua berkat TechSkills Hub. Proyek-proyek praktik langsung mereka itu benar-benar yang gue butuhin buat bangun portofolio yang bikin gue langsung diterima kerja."
-                    </p>
+                        "Aku berhasil pindah jalur karier cuma dalam 3 bulan, semua berkat TechSkills Hub. Proyek-proyek praktik langsung mereka itu benar-benar yang gue butuhin buat bangun portofolio yang bikin gue langsung diterima kerja."
+                    </p>
 </div>
-<div class="bg-background-light dark:bg-background-dark p-8 rounded-2xl relative" data-aos="zoom-in-up" data-aos-delay="100">
+<!-- Testimonial 2 -->
+<div class="bg-background-light dark:bg-background-dark p-8 rounded-2xl relative">
 <span class="material-symbols-outlined absolute top-8 right-8 text-6xl text-primary/10 select-none">format_quote</span>
 <div class="flex items-center gap-4 mb-6 relative z-10">
-<img alt="David M." class="w-14 h-14 rounded-full object-cover border-2 border-primary" data-alt="Headshot of a smiling man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApCl2T2WauH-zfKze6qP4YYw0KDmc5JPrAPeFKhV3-WaAgWkwjQmQGv2DjW45Ww6qtMfY7KuArZR-fiRJkaSa2DvV-hZTmZsJAtQSLm7Y8S-VGNpqA0aHreBnZ_jw_WVREf4LEbnPEDGymNU6uPHgMGbHN--UtqtbxDVRX4A-Zvw2lLXxWTubd7umFtClgVyK9A3R8C_M-Kwfn99E1TH-ggX0kFGsogfMlU-O_3rIPLapS-m4uHo98YGfNmD6EhW7TuDG3XfsKRRE"/>
-<div>
-<h4 class="font-bold text-text-main dark:text-white">Mardhan Faulana</h4>
-<p class="text-sm text-text-muted dark:text-white/60">Security Analyst @ Cisco</p>
-</div>
-</div>
-<p class="text-text-main dark:text-white/90 italic relative z-10">
- "Persiapan sertifikasi di sini gila, top-notch banget. Ku lulus ujian CompTIA Security+ di percobaan pertama dan langsung dapat kerja dua minggu setelahnya. Investasi terbaik yang pernah ada!"
-                    </p>
-</div>
-<div class="bg-background-light dark:bg-background-dark p-8 rounded-2xl relative hidden lg:block" data-aos="zoom-in-up" data-aos-delay="200">
-<span class="material-symbols-outlined absolute top-8 right-8 text-6xl text-primary/10 select-none">format_quote</span>
-<div class="flex items-center gap-4 mb-6 relative z-10">
-<img alt="Emily R." class="w-14 h-14 rounded-full object-cover border-2 border-primary" data-alt="Headshot of a professional woman" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAclfgieHAESwFNmKLgpMV7NOtUg2dcIIfQYt0-6LxGBs0CnzLvrsIcEsoQOAO98B1CdFbqvt_OcI-ypyIXuoPWD4lHUFzZWxwo0BJSRFHeSUcxUDBbEJS6dziTnB0Ur7j0dnl3JuLRXWuG66RUzKDbbqwONHQzcX4BFOTbQP5Kv3OEQpxZ7Y0toW9rMRC7VVj9k9quUa8nS-G1BNCpAFTbQXn9WhCZUK6-qM2E3o3ExhU_BVBZAH__YXJxb-VKJ74uJgGO4676RkA"/>
-<div>
-<h4 class="font-bold text-text-main dark:text-white">Nafi Yaufil</h4>
-<p class="text-sm text-text-muted dark:text-white/60">UX Designer @ Airbnb</p>
-</div>
-</div>
-<p class="text-text-main dark:text-white/90 italic relative z-10">
- "TechSkills Hub itu nggak cuma ngajarin tools doang; mereka ngajarin gue cara berpikir layaknya seorang desainer. Tim dukungan karier mereka juga berperan besar banget waktu gue lagi cari-cari kerja."
-                    </p>
-</div>
-</div>
-<div class="flex lg:hidden justify-center gap-2 mt-8">
-<div class="w-3 h-3 rounded-full bg-primary"></div>
-<div class="w-3 h-3 rounded-full bg-gray-300 dark:bg-gray-700"></div>
-<div class="w-3 h-3 rounded-full bg-gray-300 dark:bg-gray-700"></div>
-</div>
-</div>
-</section>
-<section class="py-20 px-6 lg:px-8" data-aos="fade-in">
-<div class="mx-auto max-w-[1280px] bg-[#1c1c0d] dark:bg-black rounded-3xl overflow-hidden relative">
-<div class="absolute top-0 right-0 w-1/2 h-full bg-primary/20 blur-3xl rounded-full translate-x-1/2 -translate-y-1/2"></div>
-<div class="relative z-10 flex flex-col md:flex-row items-center justify-between p-12 lg:p-20 gap-10">
-<div class="max-w-2xl">
-<h2 class="text-3xl md:text-5xl font-black text-white mb-6">Ready to start your tech career?</h2>
-<p class="text-white/80 text-lg mb-8">Gabunglah bersama ribuan lulusan yang telah mengubah hidup mereka bersama TechSkills Hub. Kelas cepat penuh, jangan sampai kehabisan!</p>
-<div class="flex flex-col sm:flex-row gap-4">
-<button class="bg-primary text-text-main px-8 py-4 rounded-full text-base font-bold hover:brightness-110 transition-all shadow-[0_0_20px_rgba(249,245,6,0.4)] min-w-[180px]">
- Apply Now
-                        </button>
-<button class="bg-transparent border border-white/30 text-white px-8 py-4 rounded-full text-base font-bold hover:bg-white/10 transition-all min-w-[180px]">
- Talk to an Advisor
-                        </button>
-</div>
-</div>
-<div class="hidden md:block">
-<span class="material-symbols-outlined text-9xl text-white/10">rocket_launch</span>
-</div>
-</div>
-</div>
-</section>
-<footer class="bg-white dark:bg-background-dark border-t border-[#e6e6dc] dark:border-white/10 pt-16 pb-8">
-<div class="mx-auto max-w-[1280px] px-6 lg:px-8">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-<div class="flex flex-col gap-6">
-<div class="flex items-center gap-3">
-<div class="flex items-center justify-center size-8 rounded-full bg-primary text-text-main">
-<span class="material-symbols-outlined text-lg">school</span>
-</div>
-<span class="text-lg font-bold tracking-tight text-text-main dark:text-white">TechSkills Hub</span>
-</div>
-<p class="text-text-muted dark:text-white/60 text-sm leading-relaxed">
- Memberdayakan pemimpin teknologi generasi mendatang melalui edukasi berkualitas tinggi yang mudah diakses dan dukungan karier yang intensif.
-                    </p>
-<div class="flex gap-4">
-<a class="text-text-muted hover:text-primary dark:text-white/60 transition-colors" href="#"><span class="material-symbols-outlined">thumb_up</span></a> <a class="text-text-muted hover:text-primary dark:text-white/60 transition-colors" href="#"><span class="material-symbols-outlined">photo_camera</span></a> <a class="text-text-muted hover:text-primary dark:text-white/60 transition-colors" href="#"><span class="material-symbols-outlined">smart_display</span></a> </div>
-</div>
-<div>
-<h3 class="font-bold text-text-main dark:text-white mb-6">Programs</h3>
-<ul class="flex flex-col gap-4 text-sm text-text-muted dark:text-white/60">
-<li><a class="hover:text-primary transition-colors" href="#">Web Development</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Data Science</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Cybersecurity</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">UX/UI Design</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Cloud Computing</a></li>
-</ul>
-</div>
-<div>
-<h3 class="font-bold text-text-main dark:text-white mb-6">Company</h3>
-<ul class="flex flex-col gap-4 text-sm text-text-muted dark:text-white/60">
-<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Blog</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Success Stories</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
-</ul>
-</div>
-<div>
-<h3 class="font-bold text-text-main dark:text-white mb-6">Stay Updated</h3>
-<p class="text-sm text-text-muted dark:text-white/60 mb-4">Get the latest course updates and tech news.</p>
-<form class="flex flex-col gap-3">
-<input class="w-full px-4 py-3 rounded-lg border border-[#e6e6dc] bg-background-light dark:bg-white/5 dark:border-white/10 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm" placeholder="Enter your email" type="email"/>
-<button class="w-full bg-text-main text-white dark:bg-white dark:text-text-main font-bold py-3 rounded-lg hover:opacity-90 transition-opacity text-sm" type="submit">Subscribe</button>
-</form>
-</div>
-</div>
-<div class="border-t border-[#e6e6dc] dark:border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="text-sm text-text-muted dark:text-white/40">© 2024 TechSkills Hub. All rights reserved.</p>
-<div class="flex gap-6 text-sm text-text-muted dark:text-white/40">
-<a class="hover:text-text-main dark:hover:text-white" href="#">Privacy Policy</a>
-<a class="hover:text-text-main dark:hover:text-white" href="#">Terms of Service</a>
-</div>
-</div>
-</div>
-</footer>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-    AOS.init({
-        duration: 1000, // Durasi animasi dalam milidetik
-        once: true, // Animasi hanya terjadi satu kali saat scroll ke bawah
-    });
-</script>
-</body></html>
+<img alt="David M." class="w-14 h-14 rounded-full object-cover border-2 border-primary" data-alt="Headshot of a smiling ma
